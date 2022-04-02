@@ -2,7 +2,7 @@ package questoes;
 
 import java.util.Scanner;
 
-public class questaoExtra3 {
+public class questaoExtra4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
