@@ -9,7 +9,7 @@ public class questao4 {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		int x=1,op1,op2,idade,fem=0,masc=0,outro=0,calm=0,nerv=0,agres=0,femNerv=0,mascAgres=0,outroCalm=0,nerv40=0,calm18=0;
+		int x=1,op1,op2,idade,calm=0,femNerv=0,mascAgres=0,outroCalm=0,nerv40=0,calm18=0;
 		
 		while (x<=4)
 		{
@@ -22,22 +22,23 @@ public class questao4 {
 			System.out.println("\nOp.3: Outro.");
 			op1 = leia.nextInt();
 			
+			while(op1<0 || op1>3)
+			{
+				System.out.println("\nDigite o sexo da pessoa "+x+": ");
+				op1 = leia.nextInt();
+			}
+			
 			switch(op1)
 			{
 				case 1:
-					fem++;
-					op1 = 1;
+					
 				break;
 				case 2:
-					masc++;
-					op1 = 2;
+					
 				break;
 				case 3:
-					outro++;
-					op1 = 3;
+					
 				break;	
-				default:
-					System.out.println("\nVocê não digito uma opção válida.");
 			}
 			
 		
@@ -47,22 +48,23 @@ public class questao4 {
 			System.out.println("\nOp.3: Pessoa agressiva.");
 			op2 = leia.nextInt();
 			
+			while(op2<0 || op2>3)
+			{
+				System.out.println("\nDigite o temperamento predominante da pessoa "+x+": ");
+				op2 = leia.nextInt();
+			}
+			
 			switch(op2)
 			{
 				case 1:
 					calm++;
-					op2 = 1;
 				break;
 				case 2:
-					nerv++;
-					op2 = 2;
+					
 				break;
 				case 3:
-					agres++;
-					op2 = 3;
+					
 				break;
-				default:
-					System.out.println("\nVocê não digito uma opção válida.");
 			}
 			
 			if (op1==1 && op2==2)
