@@ -19,7 +19,7 @@ public class questao1 {
 		
 		System.out.println("\nLetra B: O resultado da soma é: "+soma);
 		
-		A[4] = 100;
+		A[3] = 100;
 		
 		System.out.println("\nLetra C: Os valores do vetor A agora são: "+A[0]+", "+A[1]+", "+A[2]+", "+A[3]+", "+A[4]+", "+A[5]);
 		
